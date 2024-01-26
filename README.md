@@ -10,3 +10,13 @@ docker run -d -p 8080:80 --name milvus-web-server nginx
 ```bash
 docker buildx build -t web-app:VERSION .
 ```
+
+### Run
+Run one version of web-app
+```bash
+docker compose -f single-version.yml up -d
+```
+Run multiple versions of web-app
+```bash
+docker compose -f multiple-version.yml up -d
+```
